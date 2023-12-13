@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>夢想空島伺服器</title>
+    <link rel="icon" type="image/png" href="media/favicon.png">
+    <link rel="stylesheet" href="media/style.css">
+    <link href="https://fonts.bunny.net/css?family=Space+Grotesk:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <nav class="desktop_navbar">
+      <a href="#discord" class="desktop_navbar_link scroll">官方群組</a>
+      <a href="https://reurl.cc/4W2GMV" class="desktop_navbar_link scroll">巴哈文章</a>
+      <a href="#join" class="desktop_navbar_link scroll">立即遊玩</a>
+    </nav>
+    <div class="mobile_navbar">
+      <a href="#" class="mobile_navbar_logo_img_a"><img class="mobile_navbar_logo_img" src="media/logo_small.png" alt="logo"></a>
+      <div id="mobile_navbar_links">
+          <a class="mobile_navbar_link scroll" onclick="mobile_navbar_link_hider()" href="#discord">官方群組</a>
+          <a class="mobile_navbar_link scroll" onclick="mobile_navbar_link_hider()" href="https://reurl.cc/4W2GMV">巴哈文章</a>
+          <a class="mobile_navbar_link scroll" onclick="mobile_navbar_link_hider()" href="#join">加入我們</a>
+        </div>
+        <div class="icon" onclick="mobile_navbar_link_hider()">
+            <i class="fa fa-bars"></i>
+        </div>
+        <script>
+            function mobile_navbar_link_hider() {
+            var x = document.getElementById("mobile_navbar_links");
+            if (x.style.display === "flex") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "flex";
+            }
+            } 
+        </script>
+    </div>
+    <div class="mainflex">
+      <div class="main1">
+        <a class="main1_logo_a" href="#">
+          <img class="main1_logo" src="media/logo.png" alt="logo" margin:auto>
+        </a>
+        <div class="main1_description">
+          <a>一個主打趣味空島的伺服器</a>
+        </div>
+        <div class="main1_ipcopier_div">
+          <button class="main1_ipcopier" onclick="copyText()" type="button">
+            <span class="main1_ipcopier_text1">dream-skyblock.xyz</span>
+            <br>
+            <span class="main1_ipcopier_text2">點擊複製</span>
+          </button>
+          <script>
+            function copyText() {
+                navigator.clipboard.writeText
+            ("dream-skyblock.xyz");
+                }
+            $(document).ready(function() {
+            $('.main1_ipcopier').click(function() {
+                var popup = $('<div>', { class: 'main1_popup' })
+                .append($('<h3 class="copy_confirm">').text('成功複製連線位置'))
+                $(this).after(popup);
+                setTimeout(function() {
+                popup.remove();
+                }, 1000);
+            });
+            });
+        </script>
+        </div>
+        <a href="status" class="scroll">
+          <img alt="downarrow" class="main1_downarrow" src="media/downarrow.png">
+        </a>
+        <script>
+          const scrollLinks = document.querySelectorAll('.scroll');
+          scrollLinks.forEach(function(link) {
+            link.addEventListener('click', function(event) {
+              event.preventDefault();
+              const target = document.querySelector(link.getAttribute('href'));
+              const offsetTop = target.offsetTop;
+              window.scrollTo({
+                top: offsetTop,
+                behavior: 'smooth'
+              });
+            });
+          });
+        </script>
+      </div>
+      <div id="status"></div>
+      <div class="main3">
+        <a class="headline">伺服器狀態</a>
+        <a href="https://www.mc-list.xyz/1861/info"><img src="https://image.mc-list.xyz/banner/1-1861.png" style="display:block; margin:auto;" /></a>
+        <br>
+              </div>
+            </div>
+          </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+      <div id="more"></div>
+      <div class="main2">
+        <a class="headline">我們的特色</a>
+        <div class="main2_features_div">
+          <div class="main2_feature">
+            <img class="main2_feature_img" alt="Feature Image" src="media/menu1.png">
+            <a class="main2_feature_headline">快捷選單</a>
+            <a class="main2_feature_text">伺服器的快捷選單，整合了大多數功能。</a>
+          </div>
+          <div class="main2_feature">
+            <img class="main2_feature_img" alt="Feature Image" src="media/menu2.png">
+            <a class="main2_feature_headline">鍛造系統</a>
+            <a class="main2_feature_text">特殊的鍛造系統，讓您不再侷限於原版裝備、武器甚至是工具。</a>
+          </div>
+          <div class="main2_feature">
+            <img class="main2_feature_img" alt="Feature Image" src="media/menu3.png">
+            <a class="main2_feature_headline">禮包系統</a>
+            <a class="main2_feature_text">多樣的禮包系統，讓您不怕沒物資上手。</a>
+          </div>
+          <div class="main2_feature">
+            <img class="main2_feature_img" alt="Feature Image" src="media/weapon.png">
+            <a class="main2_feature_headline">特殊武器</a>
+            <a class="main2_feature_text">我們出了許多的特殊武器，並且每把皆有自己的的特殊玩法或技能，讓你不在侷限於原版枯燥乏味的武器。</a>
+          </div>
+          <div class="main2_feature">
+            <img class="main2_feature_img" alt="Feature Image" src="media/sythm.png">
+            <a class="main2_feature_headline">多元系統</a>
+            <a class="main2_feature_text">雖然我們是個主打空島的伺服器，但我們也推出了許多的系統以及玩法讓各位遊玩。</a>
+          </div>
+          <div class="main2_feature">
+            <img class="main2_feature_img" alt="Feature Image" src="media/holiday.png">
+            <a class="main2_feature_headline">節日活動</a>
+            <a class="main2_feature_text">我們會不定期於伺服器內舉辦節日的活動，讓各位玩家一起享受節日的氛圍。</a>
+          </div>
+        </div>
+      </div>
+      <div id="discord"></div>
+      <div class="main4">
+        <a class="headline">官方群組</a>
+        <div class="main4_dc_div">
+          <iframe src="https://discordapp.com/widget?id=857439807042093076&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+          <div class="main4_dc_description_div">
+            <a class="main4_dc_description_title">您可以在官方群組...</a>
+            <a class="main4_dc_description"> ・與其他人聊天 <br> ・提問問題 <br> ・獲取伺服器更新通知/伺服器公告 <br> ・提供意見 <br> ・更多事情可以做 </a>
+            <a href="https://discord.gg/Es9Jsbdmny" class="main4_dc_button_a">
+              <div class="main4_dc_button">立刻加入</div>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div id="join"></div>
+      <div class="main5">
+        <a class="headline">立即遊玩</a>
+        <div class="main3_join_div_div">
+          <div class="main3_join_div">
+            <a class="main3_join_title">Java</a>
+            <div class="main3_join_content_div">
+              <div class="main3_join_categories">
+                <a>連線位置:</a>
+                <a>遊戲版本:</a>
+                <a>正版驗證:</a>
+              </div>
+              <div class="main3_join_values">
+                <a>dream-skyblock.xyz</a>
+                <a>1.19.4</a>
+                <a>開啟</a>
+              </div>
+            </div>
+          </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="copyright_div">
+      <a href="https://github.com/FQQD/MCServer-Web-Template" class="copyright">Made by FQQD 2023 - Edited by [Name] [Year]</a>
+    </footer>
+  </body>
+</html>
